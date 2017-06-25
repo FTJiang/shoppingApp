@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string name="category">Category</string>
+    <string name="cart">Cart</string>
+    <string name="me">Me</string>
+    <string name="home">Home</string>
+
+    <string name="dialog_positive">OK</string>
+    <string name="dialog_negative">NO</string>
+    <string name="title_activity_main_act">MainActActivity</string>
+
+    <!-- sharepreference -->
+    <string name="SP_NAME">config</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+        <RadioButton
+            android:id="@+id/rdoBtn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:checked="true"
+            style="@style/radioStyle"
+            android:onClick="onRadioButtonClicked"
+            android:drawableTop="@drawable/ic_home_black_24dp"/>
+
+        <RadioButton
+            android:id="@+id/rdoBtn_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            style="@style/radioStyle"
+            android:onClick="onRadioButtonClicked"
+            android:drawableTop="@drawable/ic_toc_black_24dp"/>
+
+        <RadioButton
+            android:id="@+id/rdoBtn_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            style="@style/radioStyle"
+            android:onClick="onRadioButtonClicked"
+            android:drawableTop="@drawable/ic_shopping_cart_black_24dp"/>
+
+        <RadioButton
+            android:id="@+id/rdoBtn_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me"
+            style="@style/radioStyle"
+            android:onClick="onRadioButtonClicked"
+            android:drawableTop="@drawable/ic_person_black_24dp"/>
+
+    </RadioGroup>
+
+</LinearLayout>
