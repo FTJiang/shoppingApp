@@ -32,6 +32,12 @@
         <item name="android:layout_marginLeft">20dp</item>
     </style>
 
+    <style name="CategoryButton">
+        <item name="android:background">@drawable/bg_category_button</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">10dp</item>
+    </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
@@ -53,7 +59,9 @@
         <item name="android:button">@null</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">-7dp</item>
         <item name="android:textColor">@drawable/ic_bottom_nav_color_selector</item>
         <item name="android:drawableTint">@drawable/ic_bottom_nav_color_selector</item>
     </style>
+
 </resources>

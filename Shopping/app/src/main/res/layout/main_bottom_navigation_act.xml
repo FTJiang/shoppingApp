@@ -21,7 +21,7 @@
             android:checked="true"
             style="@style/radioStyle"
             android:onClick="onRadioButtonClicked"
-            android:drawableTop="@drawable/ic_home_black_24dp"/>
+            android:drawableTop="@drawable/ic_home_black_36dp"/>
 
         <RadioButton
             android:id="@+id/rdoBtn_category"
@@ -30,7 +30,7 @@
             android:text="@string/category"
             style="@style/radioStyle"
             android:onClick="onRadioButtonClicked"
-            android:drawableTop="@drawable/ic_toc_black_24dp"/>
+            android:drawableTop="@drawable/ic_toc_black_36dp"/>
 
         <RadioButton
             android:id="@+id/rdoBtn_cart"
@@ -38,8 +38,9 @@
             android:layout_height="wrap_content"
             android:text="@string/cart"
             style="@style/radioStyle"
+            android:drawablePadding="-3dp"
             android:onClick="onRadioButtonClicked"
-            android:drawableTop="@drawable/ic_shopping_cart_black_24dp"/>
+            android:drawableTop="@drawable/ic_shopping_cart_black_36dp"/>
 
         <RadioButton
             android:id="@+id/rdoBtn_me"
@@ -47,8 +48,9 @@
             android:layout_height="wrap_content"
             android:text="@string/me"
             style="@style/radioStyle"
+            android:drawablePadding="-3dp"
             android:onClick="onRadioButtonClicked"
-            android:drawableTop="@drawable/ic_person_black_24dp"/>
+            android:drawableTop="@drawable/ic_person_black_36dp"/>
 
     </RadioGroup>
 

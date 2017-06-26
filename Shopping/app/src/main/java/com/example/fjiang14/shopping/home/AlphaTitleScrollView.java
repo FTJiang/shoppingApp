@@ -4,10 +4,9 @@ import android.content.Context;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
+import com.example.fjiang14.shopping.R;
 import com.youth.banner.Banner;
 
 /**
@@ -61,8 +60,10 @@ public class AlphaTitleScrollView extends ScrollView {
         int alpha = 0;
         if(t < headHeight) {
              alpha = 255 - (int) (((float) t / headHeight) * 255);
+            toolbar.setBackground(getResources().getDrawable(R.drawable.bg_toolbar));
         }else{
             alpha = (int) (((float) (t-headHeight) / (headHeight) ) * 255);
+            toolbar.setBackground(getResources().getDrawable(R.color.colorWhite));
         }
         if (alpha >= 255)
             alpha = 255;
@@ -70,7 +71,6 @@ public class AlphaTitleScrollView extends ScrollView {
             alpha = 0;
         if(t > headHeight2)
             alpha = 255;
-        System.out.println("alpha/255: "+alpha/255f);
         toolbar.setAlpha(alpha/255f);
 
         super.onScrollChanged(l, t, oldl, oldt);

@@ -20,78 +20,36 @@
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="200dp" />
-            <TextView
-                android:layout_width="wrap_content"
+            <include layout="@layout/main_home_categories"/>
+            <com.oushangfeng.marqueelayout.MarqueeLayout
+                android:id="@+id/marquee_layout1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ggg"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ggg"/>
-
+                android:layout_below="@+id/marquee_layout"
+                android:background="#dcdcdc"
+                app:enableAlphaAnim="true"
+                app:enableScaleAnim="false"
+                app:orientation="up">
+            </com.oushangfeng.marqueelayout.MarqueeLayout>
+            <com.dalong.carrousellayout.CarrouselLayout
+                android:id="@+id/carrousel"
+                app:rotateDirection="anticlockwise"
+                app:r="200dp"
+                app:rotationTime="3000"
+                android:gravity="center"
+                android:layout_marginBottom="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/main_home_cardview"/>
+                <include layout="@layout/main_home_cardview"/>
+                <include layout="@layout/main_home_cardview"/>
+                <include layout="@layout/main_home_cardview"/>
+                <include layout="@layout/main_home_cardview"/>
+            </com.dalong.carrousellayout.CarrouselLayout>
         </LinearLayout>
 
     </com.example.fjiang14.shopping.home.AlphaTitleScrollView>
+
     <LinearLayout
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
@@ -105,11 +63,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_toolbar"
+
         android:minHeight="?attr/actionBarSize">
         <android.support.v7.widget.SearchView
             app:queryHint="What are you looking for?"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             toolbar:iconifiedByDefault="false"
             style="@style/SearchView">
 

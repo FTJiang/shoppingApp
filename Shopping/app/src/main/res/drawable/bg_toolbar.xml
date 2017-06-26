@@ -6,7 +6,7 @@
     <solid android:color="#afffffff" />
     <!-- padding设置内容区域离边界的间距 -->
     <gradient
-        android:startColor="#f0000000"
+        android:startColor="#a0000000"
         android:endColor="#00000000"
         android:angle="270"/>
 
